@@ -22,6 +22,7 @@ var thresholdConditionTypes = map[string][]string{
 	},
 	"infra_host_not_reporting": {
 		"duration",
+		"no_trigger_on",
 	},
 }
 
