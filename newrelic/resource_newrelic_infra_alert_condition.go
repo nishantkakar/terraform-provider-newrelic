@@ -46,6 +46,11 @@ func thresholdSchema() *schema.Resource {
 					return strings.EqualFold(old, new)
 				},
 			},
+      "no_trigger_on": {
+        Type:         schema.TypeList,
+        Optional:     true,
+        ValidateFunc: validation.StringInSlice([]string{"shutdown"}, true),
+      },
 		},
 	}
 }
